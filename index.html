@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="IUSTPersonReID: A New Domain in Person Re-Identification Datasets"
+    />
+    <meta
+      name="keywords"
+      content="Person Re-ID, Image Dataset, Person Re-Identification"
+    />
+    <title>
+      IUSTPersonReID: A New Domain in Person Re-Identification Datasets
+    </title>
+
+    <!-- Bulma CSS Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Rubik Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Rubik', sans-serif; /* Set Rubik as the default font */
+      }
+      .names{
+        color: black;
+      }
+      .names:hover{
+        text-decoration: underline;
+      }
+      .hero {
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+      .content-container {
+        max-width: 50%; /* Updated width to 80% */
+        margin: auto;
+        padding: 0; /* Removed padding to reduce empty space */
+      }
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .content-container {
+            max-width: 100%;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .content-container {
+            max-width: 70%;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        content-container {
+            max-width: 70%;
+        }
+      }
+      .content-container-about {
+        max-width: 80%; /* Updated width to 80% */
+        margin: auto;
+        padding: 0; /* Removed padding to reduce empty space */
+      }
+      .content-container img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .title {
+        padding-bottom: 10px; /* Reduced margin below title */
+      }
+
+      .subtitle {
+        margin-bottom: 0.25rem; /* Reduced margin below subtitle */
+      }
+
+      .slideshow-container {
+        position: relative;
+        width: 80%; /* Centering adjustment */
+        margin: auto; /* Centering adjustment */
+        overflow: hidden;
+        height: 300px;
+      }
+
+      .slideshow {
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s ease;
+      }
+
+      .slideshow img {
+        height: 300px;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(90, 89, 89, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 100;
+        font-size: 18px;
+        border-radius: 50%; /* Ensuring the shape is circular */
+        width: 40px; /* Width of the circular button */
+        height: 40px; /* Height of the circular button */
+        display: flex; /* To center content */
+        justify-content: center; /* Centering the icon */
+        align-items: center; /* Centering the icon */
+      }
+
+      .arrow-left {
+        left: 10px;
+      }
+
+      .arrow-right {
+        right: 10px;
+      }
+
+      .about-dataset-title {
+        font-size: 1.25rem; /* Increased font size by 5 units (from 1.0rem to 1.25rem) */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <!-- <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <i class="fas fa-home"></i>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">Research</a>
+          <a class="navbar-item" href="#">About</a>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- Hero Section -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="content-container has-text-centered">
+          <h1 class="title">
+            IUSTPersonReID: A New Domain in Person Re-Identification Datasets
+          </h1>
+          <p class="subtitle">
+            <a class="names" href="https://webpages.iust.ac.ir/mrmohammadi/">MR. Mohammadi</a>, <a class="names">F. Anvari</a>, <a class="names" href="https://www.linkedin.com/in/mohammadjavad-haghighi/">MJ. Mirshekari</a>, <a class="names" href="https://www.linkedin.com/in/alirezasm77/">A. Sedighi Moghaddam</a>
+          </p>
+          <a href="https://www.linkedin.com/company/cvlab-iust">
+            Computer Vision Lab of Iran University of Science and Technology - CVLab IUST
+          </a>
+          <br>
+          <a href="https://www.iust.ac.ir/">
+            Iran University of Science and Technology (IUST)
+          </a>
+          <br>
+          <br>
+          <div class="buttons is-centered" style="margin-top: 10px;">
+            <a href="https://github.com/ComputerVisionIUST/IUST_PersonReId" class="button is-dark">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub Repository</span>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/10hN0mZlD3bv10P9vAdbfszpikMe92QFv/view?usp=sharing"
+              class="button is-dark"
+            >
+              <span class="icon"
+                ><i class="fas fa-cloud-download-alt"></i
+              ></span>
+              <span>Download Dataset</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Comparison Section -->
+    <!-- <section class="section">
+      <div class="content-container">
+        <img src="your-comparison-image.jpg" alt="Comparison of datasets" />
+      </div>
+    </section> -->
+
+    <!-- Description Section -->
+    <section class="section">
+      <div class="content-container has-text-centered">
+        <h2 class="about-dataset-title title is-4">About the Dataset</h2> <!-- Applied new class for font size -->
+        <p class="content has-text-justified">
+          The <strong>IUSTPersonReID</strong> dataset is a unique resource designed to reflect the cultural and environmental context of Iran, capturing raw video footage from various locations under diverse conditions. It encompasses a wide array of filming scenarios, including different lighting, camera angles, and film quality, making it highly representative of real-world environments. The dataset features over 270,000 frames with 32,668 annotated bounding boxes across 3,205 identities, emphasizing the importance of pedestrian tracking and human annotations to enhance model training accuracy. With video footage recorded at significant sites like the Iran University of Science and Technology and local mosques, the dataset stands out for its detailed annotations and multi-camera identities, providing valuable insights into person re-identification challenges in varying contexts.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section class="section">
+      <div class="content-container-about">
+        <div class="slideshow-container" id="slideshow-container">
+          <div class="slideshow" id="slideshow">
+            <img src="static/images/0.jpg" alt="Image 1" />
+            <img src="static/images/1.jpg" alt="Image 1" />
+            <img src="static/images/2.jpg" alt="Image 2" />
+            <img src="static/images/3.jpg" alt="Image 3" />
+            <img src="static/images/4.jpg" alt="Image 4" />
+            <img src="static/images/5.jpg" alt="Image 5" />
+            <img src="static/images/6.jpg" alt="Image 6" />
+            <img src="static/images/7.jpg" alt="Image 7" />
+            <img src="static/images/8.jpg" alt="Image 8" />
+            <img src="static/images/9.jpg" alt="Image 9" />
+            <img src="static/images/10.jpg" alt="Image 10" />
+            <img src="static/images/11.jpg" alt="Image 11" />
+            <img src="static/images/12.jpg" alt="Image 12" />
+            <img src="static/images/13.jpg" alt="Image 13" />
+            <img src="static/images/14.jpg" alt="Image 14" />
+            <img src="static/images/15.jpg" alt="Image 15" />
+            <img src="static/images/16.jpg" alt="Image 16" />
+            <img src="static/images/17.jpg" alt="Image 17" />
+            <img src="static/images/18.jpg" alt="Image 18" />
+            <img src="static/images/19.jpg" alt="Image 19" />
+            <img src="static/images/20.jpg" alt="Image 20" />
+            <img src="static/images/21.jpg" alt="Image 21" />
+            <img src="static/images/22.jpg" alt="Image 22" />
+            <img src="static/images/23.jpg" alt="Image 23" />
+            <img src="static/images/24.jpg" alt="Image 24" />
+            <img src="static/images/25.jpg" alt="Image 25" />
+            <img src="static/images/26.jpg" alt="Image 26" />
+            <img src="static/images/27.jpg" alt="Image 27" />
+            <img src="static/images/28.jpg" alt="Image 28" />
+            <img src="static/images/29.jpg" alt="Image 29" />
+            <img src="static/images/30.jpg" alt="Image 30" />
+            <!-- <img src="static/images/31.jpg" alt="Image 31" /> -->
+            <img src="static/images/32.jpg" alt="Image 32" />
+            <img src="static/images/33.jpg" alt="Image 33" />
+            <img src="static/images/34.jpg" alt="Image 34" />
+            <img src="static/images/35.jpg" alt="Image 35" />
+            <!-- <img src="static/images/36.jpg" alt="Image 36" /> -->
+            <img src="static/images/37.jpg" alt="Image 37" />
+            <img src="static/images/38.jpg" alt="Image 38" />
+            <img src="static/images/39.jpg" alt="Image 39" />
+            <img src="static/images/40.jpg" alt="Image 40" />
+            <img src="static/images/41.jpg" alt="Image 41" />
+            <img src="static/images/42.jpg" alt="Image 42" />
+            <img src="static/images/43.jpg" alt="Image 43" />
+            <img src="static/images/44.jpg" alt="Image 44" />
+            <img src="static/images/45.jpg" alt="Image 45" />
+            <img src="static/images/46.jpg" alt="Image 46" />
+            <img src="static/images/47.jpg" alt="Image 47" />
+            <img src="static/images/48.jpg" alt="Image 48" />
+            <img src="static/images/49.jpg" alt="Image 49" />
+            <img src="static/images/50.jpg" alt="Image 50" />
+            <img src="static/images/51.jpg" alt="Image 51" />
+            <img src="static/images/52.jpg" alt="Image 52" />
+            <img src="static/images/53.jpg" alt="Image 53" />
+            <img src="static/images/54.jpg" alt="Image 54" />
+            <img src="static/images/55.jpg" alt="Image 55" />
+            <img src="static/images/56.jpg" alt="Image 56" />
+            <img src="static/images/57.jpg" alt="Image 57" />
+            <img src="static/images/58.jpg" alt="Image 58" />
+            <img src="static/images/59.jpg" alt="Image 59" />
+          </div>
+          <button class="arrow arrow-left" id="prev">&#10094;</button>
+          <button class="arrow arrow-right" id="next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>IUSTPersonReID Dataset</strong> by MR. Mohammadi, F. Anvari, MJ. Mirshekari, A. Sedighi Moghaddam.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const slideshow = document.getElementById("slideshow");
+      const images = document.querySelectorAll(".slideshow img");
+      const slideshowContainer = document.getElementById("slideshow-container");
+      const totalImages = images.length - 6;
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      function resizeImages() {
+        images.forEach((img) => {
+          const aspectRatio = img.naturalWidth / img.naturalHeight;
+          img.style.width = 300 * aspectRatio + "px";
+        });
+      }
+
+      function slideImages(step) {
+        currentIndex = (currentIndex + step + totalImages) % totalImages;
+        const offset = Array.from(images)
+          .slice(0, currentIndex)
+          .reduce((acc, img) => acc + img.offsetWidth + 10, 0);
+        slideshow.style.transform = `translateX(-${offset}px)`;
+      }
+
+      function autoSlide() {
+        autoSlideInterval = setInterval(() => {
+          slideImages(1);
+        }, 1000);
+      }
+
+      slideshowContainer.addEventListener("mouseenter", () =>
+        clearInterval(autoSlideInterval)
+      );
+      slideshowContainer.addEventListener("mouseleave", autoSlide);
+
+      document
+        .getElementById("next")
+        .addEventListener("click", () => slideImages(1));
+      document
+        .getElementById("prev")
+        .addEventListener("click", () => slideImages(-1));
+
+      window.addEventListener("load", () => {
+        resizeImages();
+        slideImages(0);
+        autoSlide();
+      });
+
+      window.addEventListener("resize", resizeImages);
+    </script>
+  </body>
+</html>
