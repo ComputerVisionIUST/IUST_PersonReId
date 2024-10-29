@@ -46,6 +46,7 @@
         margin: auto;
         padding: 0; /* Removed padding to reduce empty space */
       }
+
       /* Extra small devices (phones, 600px and down) */
       @media only screen and (max-width: 600px) {
         .content-container {
@@ -133,6 +134,25 @@
 
       .about-dataset-title {
         font-size: 1.25rem; /* Increased font size by 5 units (from 1.0rem to 1.25rem) */
+      }
+
+      .organization-logo {
+        height: 100px;
+        width: auto;
+        filter: grayscale(100%); /* Start with grayscale */
+        transition: filter 0.3s ease; /* Smooth transition to color on hover */
+        display: inline-block; /* Center the image */
+      }
+
+      .organization-logo:hover {
+        filter: grayscale(0%); /* Remove grayscale on hover */
+      }
+
+      .logo-container {
+        display: flex;
+        justify-content: center; /* Center logos horizontally */
+        align-items: center; /* Center logos vertically */
+        gap: 20px; /* Space between logos if you add more */
       }
     </style>
   </head>
@@ -277,6 +297,16 @@
           </div>
           <button class="arrow arrow-left" id="prev">&#10094;</button>
           <button class="arrow arrow-right" id="next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organizations Section -->
+    <section class="section">
+      <div class="has-text-centered">
+        <h2 class="about-dataset-title title is-4">Organizations That Trust Our Data</h2>
+        <div class="logo-container">
+          <img class="organization-logo" src="https://partdp.ai/_nuxt/img/en-logo.6ecefa9.png" alt="Part AI"/>
         </div>
       </div>
     </section>
