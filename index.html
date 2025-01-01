@@ -160,7 +160,19 @@
         display: inline-block; /* Center the image */
       }
 
+      .sponsor-logo {
+        height: 200px;
+        width: auto;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+        display: inline-block;
+      }
+
       .organization-logo:hover {
+        filter: grayscale(0%); /* Remove grayscale on hover */
+      }
+
+      .sponsor-logo:hover {
         filter: grayscale(0%); /* Remove grayscale on hover */
       }
 
@@ -314,17 +326,26 @@
       </div>
     </section>
     
+    <!-- Sponser Section -->
+    <section class="section">
+      <div class="has-text-centered">
+        <h2 class="about-dataset-title title is-4">Sponsered by</h2>
+        <div class="logo-container">
+          <a href="https://ictc.isti.ir/"><img class="sponsor-logo" src="static/images/setad_logo.png" alt="Setad"/></a>
+        </div>
+      </div>
+    </section>
+
     <!-- BibTeX Section -->
     <section class="section">
       <div class="content-container">
         <h2 class="about-dataset-title title is-4">BibTeX</h2>
-        <pre><code>@unpublished{iustpersonreid,
-  author       = {A. Sedighi Moghaddam and F. Anvari and MJ. Mirshekari and MA.Fakhari and MR. Mohammadi},
-  title        = {{IUSTPersonReID: A New Domain in Person Re-Identification Datasets}},
-  note         = {Dataset accessible at \url{https://github.com/ComputerVisionIUST/IUST_PersonReId}},
-  year         = {2024},
-  month        = {Oct},
-  organization = {Computer Vision Lab, Iran University of Science and Technology}}
+        <pre><code>@article{moghaddam2024iust_personreid,
+  title   = {IUST_PersonReId: A New Domain in Person Re-Identification Datasets},
+  author  = {Moghaddam, Alireza Sedighi and Anvari, Fatemeh and Haghighi, Mohammadjavad Mirshekari and Fakhari, Mohammadali and Mohammadi, Mohammad Reza},
+  journal = {arXiv preprint arXiv:2412.18874},
+  year    = {2024}
+}
         </code></pre>
       </div>
     </section>
