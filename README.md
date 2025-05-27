@@ -122,7 +122,7 @@ We trained various person re-identification models using the **IUST_PersonReID**
 |[SOLIDER-ReID](https://github.com/tinyvision/SOLIDER-REID)| 51.08%      | 65.32%      | 70.76%       | 42.35%   |
 |[CLIP-ReID](https://github.com/Syliz517/CLIP-ReID)| 61.40% | 72.50% | 77.50% | 51.60% |
 
-To make it easy to reproduce the results, we created a [**Google Colab notebook**](https://colab.research.google.com/drive/1Q_lA1Hi_SqVnYueyqlhTaxM2SpbRsd_K?usp=sharing) that allows users to train and test the model on this dataset. The notebook provides simple instructions for training and evaluating the model.
+To make it easy to reproduce the results, we created a that allows users to train and test the model on this dataset. The notebook provides simple instructions for training and evaluating the model.
 
 ## Citation
 
