@@ -9,7 +9,8 @@
 ![Dataset Overview](https://github.com/IRIUST/Iranians_Reid_dataset/assets/141324225/782122d5-235a-4314-9d81-7eceec56c960)
 
 ## News! ✨📢  
-We are pleased to announce the release of **IUST_PersonReID Dataset Paper**, now available on [**arXiv**](https://arxiv.org/abs/2412.18874).  
+- Our paper titled **"A culturally-aware benchmark for Person Re-Identification in modest attire"** has been accepted for publication in the _Engineering Applications of Artificial Intelligence (EAAI) journal_. You can read and download the paper for free until **August 16, 2025** using the following link: 👉 [**Access the paper here**](https://authors.elsevier.com/c/1lKtE3OWJ9CUgq)
+- We are pleased to announce the release of **IUST_PersonReID Dataset Paper**, now available on [**arXiv**](https://arxiv.org/abs/2412.18874).  
 We invite you to explore our work and welcome any feedback or discussions.
 
 ## About the Dataset
@@ -130,11 +131,16 @@ To make it easy to reproduce the results, we created a [**Google Colab notebook*
 If you find this dataset useful for your research, please cite our paper.
 
 ```bibtex
-@article{moghaddam2024iust_personreid,
-  title={IUST\_PersonReId: A New Domain in Person Re-Identification Datasets},
-  author={Moghaddam, Alireza Sedighi and Anvari, Fatemeh and Haghighi, Mohammadjavad Mirshekari and Fakhari, Mohammadali and Mohammadi, Mohammad Reza},
-  journal={arXiv preprint arXiv:2412.18874},
-  year={2024}
+@article{MOGHADDAM2025111494,
+  title = {A culturally-aware benchmark for Person Re-Identification in modest attire},
+  journal = {Engineering Applications of Artificial Intelligence},
+  volume = {158},
+  pages = {111494},
+  year = {2025},
+  issn = {0952-1976},
+  doi = {https://doi.org/10.1016/j.engappai.2025.111494},
+  url = {https://www.sciencedirect.com/science/article/pii/S0952197625014964},
+  author = {Alireza Sedighi Moghaddam and Fatemeh Anvari and Mohammadjavad Mirshekari Haghighi and Mohammadali Fakhari and Mohammad Reza Mohammadi},
 }
 ```
 ---
