@@ -9,7 +9,11 @@
 ![Dataset Overview](https://github.com/IRIUST/Iranians_Reid_dataset/assets/141324225/782122d5-235a-4314-9d81-7eceec56c960)
 
 ## اطلاع‌رسانی! ✨📢  
-خرسندیم که اعلام کنیم **مقاله مجموعه‌داده IUST_PersonReID** منتشر شده است و اکنون در [**arXiv**](https://arxiv.org/abs/2412.18874) در دسترس می‌باشد.
+
+• با افتخار اعلام می‌داریم مقاله‌ی **A culturally-aware benchmark for Person Re-Identification in modest attire** در ژورنال معتبر _Engineering Applications of_ _Artificial Intelligence (EAAI)_ پذیرفته شده است. این مقاله به مدت ۵۰ روز تا تاریخ **۲۵ مرداد ۱۴۰۴** به‌صورت **رایگان** قابل مشاهده و دانلود است. 👈 [دانلود مقاله از اینحا](https://authors.elsevier.com/c/1lKtE3OWJ9CUgq)
+
+
+• خرسندیم که اعلام کنیم **مقاله مجموعه‌داده IUST_PersonReID** منتشر شده است و اکنون در [**arXiv**](https://arxiv.org/abs/2412.18874) در دسترس می‌باشد.
 از شما دعوت می‌کنیم مقاله این مجموعه‌داده را نیز بررسی کنید و هرگونه نظر یا بازخورد خود را با ما به اشتراک بگذارید.
 
 ## درباره مجموعه داده
@@ -130,10 +134,15 @@ https://github.com/user-attachments/assets/4cef8880-6f00-43e4-a52d-eb3f8657c31b
 اگر این مجموعه‌داده برای تحقیقات شما مفید واقع شد، لطفا به مقاله زیر ارجاع دهید.
 
 ```bibtex
-@article{moghaddam2024iust_personreid,
-  title={IUST\_PersonReId: A New Domain in Person Re-Identification Datasets},
-  author={Moghaddam, Alireza Sedighi and Anvari, Fatemeh and Haghighi, Mohammadjavad Mirshekari and Fakhari, Mohammadali and Mohammadi, Mohammad Reza},
-  journal={arXiv preprint arXiv:2412.18874},
-  year={2024}
+@article{MOGHADDAM2025111494,
+  title = {A culturally-aware benchmark for Person Re-Identification in modest attire},
+  journal = {Engineering Applications of Artificial Intelligence},
+  volume = {158},
+  pages = {111494},
+  year = {2025},
+  issn = {0952-1976},
+  doi = {https://doi.org/10.1016/j.engappai.2025.111494},
+  url = {https://www.sciencedirect.com/science/article/pii/S0952197625014964},
+  author = {Alireza Sedighi Moghaddam and Fatemeh Anvari and Mohammadjavad Mirshekari Haghighi and Mohammadali Fakhari and Mohammad Reza Mohammadi},
 }
 ```
